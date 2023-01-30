@@ -1,10 +1,12 @@
 import Link from "./Link";
+import Modal from "./Modal";
 
 function Sidebar(){
     const links =[
         { label:'Dropdown', path: '/' },
         { label:'Accordion', path: '/accordion' },
-        { label:'Buttons', path: '/buttons' }
+        { label:'Buttons', path: '/buttons' },
+        { label:'Modal', path:'/modal'}
     ];
     const renderedLinks= links.map((link) => {
         return <Link key={link.label} 
